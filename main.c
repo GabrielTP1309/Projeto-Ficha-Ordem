@@ -159,9 +159,27 @@ int main() {
     fprintf(arquivo, "PRE: %d\n", PRE);
     fprintf(arquivo, "Vida: %d\n", PV);
     fprintf(arquivo, "Pontos de Esforço: %d\n", PE);
-    fprintf(arquivo, "Sanidade : %d\n", SAN);
+    fprintf(arquivo, "Sanidade : %d\n\n", SAN);
+    fprintf(arquivo, "-----------------------\n");
+    fprintf(arquivo, "Habilidades:\n");
+
+    switch (classe) {
+        case 1:
+            fprintf(arquivo, "Ataque Especial\n");
+            break;
+
+        case 2:
+            fprintf(arquivo, "Eclético\n");
+            fprintf(arquivo, "Perito\n");
+            break;
+
+        case 3:
+            fprintf(arquivo, "Escolhido pelo Outro Lado\n");
+    }
 
     fclose(arquivo);
+
+    printf("Ficha Finalizada e Salva\n");
 
     return 0;
 }
