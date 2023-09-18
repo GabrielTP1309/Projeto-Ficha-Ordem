@@ -1,0 +1,15 @@
+
+Ficha:
+Nome: Leo
+FOR: 2
+AGI: 3
+INT: 1
+VIG: 2
+PRE: 1
+Vida: 18
+Pontos de Esforço: 4
+Sanidade : 16
+
+Habilidades
+Eclético
+Perito
