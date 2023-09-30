@@ -30,6 +30,129 @@ int calcularPE(int classe, int pre) {
     }
 }
 
+void escolherOrigem() {
+    int opcao;
+    printf("Escolha a origem do personagem:\n");
+    printf("1. Acadêmico\n");
+    printf("2. Agente de Saúde\n");
+    printf("3. Amnésico\n");
+    printf("4. Artista\n");
+    printf("5. Atleta\n");
+    printf("6. Chef\n");
+    printf("7. Criminoso\n");
+    printf("8. Cultista Arrependido\n");
+    printf("9. Desgarrado\n");
+    printf("10. Engenheiro\n");
+    printf("11. Executivo\n");
+    printf("12. Investigador\n");
+    printf("13. Lutador\n");
+    printf("14. Magnata\n");
+    printf("15. Mercenário\n");
+    printf("16. Militar\n");
+    printf("17. Operário\n");
+    printf("18. Policial\n");
+    printf("19. Religioso\n");
+    printf("20. Servidor Público\n");
+    printf("21. Teórico da Conspiração\n");
+    printf("22. T.I\n");
+    printf("23. Trabalhador Rural\n");
+    printf("24. Trambiqueiro\n");
+    printf("25. Universitário\n");
+    printf("26. Vítima\n");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+        case 1:
+            printf("Você escolheu a origem Acadêmico.\n");
+            break;
+        case 2:
+            printf("Você escolheu a origem Agente de Saúde.\n");
+            break;
+        case 3:
+            printf("Você escolheu a origem Amnésico.\n");
+            break;
+        case 4:
+            printf("Você escolheu a origem Artista.\n");
+            break;
+        case 5:
+            printf("Você escolheu a origem Atleta.\n");
+            break;
+        case 6:
+            printf("Você escolheu a origem Chef.\n");
+            break;
+        case 7:
+            printf("Você escolheu a origem Criminoso.\n");
+            break;
+        case 8:
+            printf("Você escolheu a origem Cultista Arrependido.\n");
+            break;
+        case 9:
+            printf("Você escolheu a origem Desgarrado.\n");
+            break;
+        case 10:
+            printf("Você escolheu a origem Engenheiro.\n");
+            break;
+        case 11:
+            printf("Você escolheu a origem Executivo.\n");
+            break;
+        case 12:
+            printf("Você escolheu a origem Investigador.\n");
+            break;
+        case 13:
+            printf("Você escolheu a origem Lutador.\n");
+            break;
+        case 14:
+            printf("Você escolheu a origem Magnata.\n");
+            break;
+        case 15:
+            printf("Você escolheu a origem Mercenário.\n");
+            break;
+        case 16:
+            printf("Você escolheu a origem Militar.\n");
+            break;
+        case 17:
+            printf("Você escolheu a origem Operário.\n");
+            break;
+        case 18:
+            printf("Você escolheu a origem Policial.\n");
+            break;
+        case 19:
+            printf("Você escolheu a origem Religioso.\n");
+            break;
+        case 20:
+            printf("Você escolheu a origem Servidor Público.\n");
+            break;
+        case 21:
+            printf("Você escolheu a origem Teórico da Conspiração.\n");
+            break;
+        case 22:
+            printf("Você escolheu a origem T.I.\n");
+            break;
+        case 23:
+            printf("Você escolheu a origem Trabalhador Rural.\n");
+            break;
+        case 24:
+            printf("Você escolheu a origem Trambiqueiro.\n");
+            break;
+        case 25:
+            printf("Você escolheu a origem Universitário.\n");
+            break;
+        case 26:
+            printf("Você escolheu a origem Vítima.\n");
+            break;
+        default:
+            printf("Opção inválida.\n");
+            break;
+    }
+}
+
+void salvarOrigem(char *origem) {
+    FILE *ficha;
+    ficha = fopen("ficha.txt", "a");
+    fprintf(ficha, "Origem: %s\n", origem);
+    fclose(ficha);
+}
+
 int main() {
     int FOR = 1, AGI = 1, INT = 1, VIG = 1, PRE = 1, classe;
     int PV, PE, SAN;
