@@ -193,68 +193,6 @@ int main() {
 
     fprintf(arquivo, "\nFicha:\n");
     fprintf(arquivo, "Nome: %s\n", nome);
-    
-    switch (origem) {
-        case 1:
-            fprintf(arquivo, "Origem: Acadêmico\n");
-            break;
-        case 2:
-            fprintf(arquivo, "Origem: Agente de Saúde\n");
-            break;
-        case 3:
-            fprintf(arquivo, "Origem: Amnésico\n");
-            break;
-        case 4:
-            fprintf(arquivo, "Origem: Artista\n");
-            break;
-        case 5:
-            fprintf(arquivo, "Origem: Atleta\n");
-            break;
-        case 6:
-            fprintf(arquivo, "Origem: Chef\n");
-            break;
-        case 7:
-            fprintf(arquivo, "Origem: Criminoso\n");
-        case 8:
-            fprintf(arquivo, "Origem: Cultista Arrependido\n");
-        case 9:
-            fprintf(arquivo, "Origem: Desgarrado\n");
-        case 10:
-            fprintf(arquivo, "Origem: Engenheiro\n");
-        case 11:
-            fprintf(arquivo, "Origem: Executivo\n");
-        case 12:
-            fprintf(arquivo, "Origem: Investigador\n");
-        case 13:
-            fprintf(arquivo, "Origem: Lutador\n");
-        case 14:
-            fprintf(arquivo, "Origem: Magnata\n");
-        case 15:
-            fprintf(arquivo, "Origem: Mercenário\n");
-        case 16:
-            fprintf(arquivo, "Origem: Militar\n");
-        case 17:
-            fprintf(arquivo, "Origem: Operário\n");
-        case 18:
-            fprintf(arquivo, "Origem: Policial\n");
-        case 19:
-            fprintf(arquivo, "Origem: Religioso\n");
-        case 20:
-            fprintf(arquivo, "Origem: Servidor Público\n");
-        case 21:
-            fprintf(arquivo, "Origem: Teórico da Conspiração\n");
-        case 22:
-            fprintf(arquivo, "Origem: T.I\n");
-        case 23:
-            fprintf(arquivo, "Origem: Trabalhador Rural\n");
-        case 24:
-            fprintf(arquivo, "Origem: Trambiqueiro\n");
-        case 25:
-            fprintf(arquivo, "Origem: Universitário\n");
-        case 26:
-            fprintf(arquivo, "Origem: Vítima\n");
-    }
-
     fprintf(arquivo, "FOR: %d\n", FOR);
     fprintf(arquivo, "AGI: %d\n", AGI);
     fprintf(arquivo, "INT: %d\n", INT);
